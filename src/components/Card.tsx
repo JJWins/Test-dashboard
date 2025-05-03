@@ -1,4 +1,15 @@
-const Card = ({ shoe }) => {
+interface Shoe {
+    name: string;
+    image: string;
+    bestSeller: boolean;
+    type: string;
+    price: number;
+    description: string;
+    rating: number;
+    ratingCount: number;
+}
+
+const Card = ({ shoe }: { shoe: Shoe }) => {
     return (
         <>
             <div className="card shoe-card p-2" role="region" 
