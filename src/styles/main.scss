@@ -1,0 +1,22 @@
+@use "variables" as *;
+
+@use "navbar" as *;
+@use "sidebar" as *;
+@use "dashboard" as *;
+@use "newMember" as *;
+@use "shoes" as *;
+@use "learnMore" as *;
+
+.pointer {
+    cursor: pointer;
+}
+
+.section-header {
+    font-size: 18px;
+    color: $primary-color;
+    margin-bottom: 0px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}

@@ -1,0 +1,27 @@
+@use "./variables" as *;
+
+.left-offset {
+    margin-left: 68px;
+}
+
+.body-offset {
+    padding: 30px;
+}
+
+.left-border {
+    border-left: 1px solid rgba($color: $primary-color, $alpha: 0.14);
+}
+
+@media screen and (max-width: 1199px) {
+    .left-border {
+        border-left: none;
+    }
+
+    .left-offset {
+        margin-left: 0;
+    }
+
+    .body-offset {
+        padding: 10px;
+    }
+}

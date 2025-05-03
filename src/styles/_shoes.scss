@@ -1,0 +1,93 @@
+@use "./variables" as *;
+
+.shoe-types {
+    margin-bottom: 20px;
+    
+    p {
+        color: $primary-color;
+        font-size: 14px;
+        padding-bottom: 8px;
+        margin-bottom: 0;
+    }
+
+    .active-type {
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 23%;
+          transform: translateX(-50%);
+          width: 45%;
+          border-bottom: 2px solid $primary-color;
+        }
+    }
+
+    .count {
+        background-color: rgba($color: $primary-color, $alpha: 0.14);
+        color: rgba($color: $primary-color, $alpha: 0.8);
+        padding: 3px 8px;
+        border-radius: 5px;
+    }
+
+    .active-count {
+        background-color: $primary-color;
+        color: #fff;
+    }
+}
+
+.btn-outline {
+    border: 2px solid $primary-color;
+    color: $primary-color;
+
+    &:hover {
+        background-color: $primary-color;
+        color: #fff;
+    }
+}
+
+.shoe-card {
+    border-radius: 15px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.13) 0px 10px 20px, rgba(0, 0, 0, 0.13) 0px 6px 6px;
+}
+
+.shoe-card img {
+    height: 262px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.tag {
+    position: absolute;
+    padding: 5px 10px;
+    background-color: #EFA53A;
+    width: 133px;
+    color: #fff;
+    font-weight: bold;
+    border-top-left-radius: 9px;
+  
+    // slant bottom right
+    clip-path: polygon(
+      0 0,       /* top-left */
+      100% 0,    /* top-right */
+      100% 0%,  /* slightly above bottom-right */
+      90% 100%,  /* angled cut */
+      0 100%     /* bottom-left */
+    );
+}  
+
+.card-title {
+    font-weight: 700;
+}
+
+.shoe-type {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.description {
+    font-size: 14px;
+    color: rgba($color: $primary-color, $alpha: 0.8);
+}
